@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SarcasmPrediction</title>
+</head>
+<body>
+    <h1>
+        Thank you for using our service.
+    </h1>
+    <a href="/">Home</a>
+
+    <hr/>
+
+    <p>
+        <% for(let i = 0; i < globalData.length; i++) { %>
+            <%=globalData[i].text %>
+            <br/>
+            <%=globalData[i].prediction %>
+            <hr/>
+        <% }%>
+
+    </p>
+</body>
+</html>
